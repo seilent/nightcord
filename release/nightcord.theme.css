@@ -319,11 +319,14 @@ button[aria-label="Open sticker picker"] {
     color: var(--text-normal) !important;
 }
 
-
 .bd-button{
     background-color: var(--nightcord-accent);
 }
 
 .bd-addon-views .bd-view-button.selected{
     background-color: var(--nightcord-accent);
+}
+
+.modeMuted-onO3r- .icon-1DeIlz, .modeMuted-onO3r- .name-23GUGE {
+    color: var(--text-muted);
 }
