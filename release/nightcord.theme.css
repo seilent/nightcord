@@ -11,32 +11,32 @@
 :root {
       --font-primary: "Nunito";
       --font-japanese: "Noto Sans JP";
-      --background-primary: #4f4869;
-      --background-secondary: #3e365a;
-      --background-secondary-alt: #3e365a;
-      --background-tertiary: #3e365a;
-      --scrollbar-thin-thumb: #312b4a;
-      --nightcord-accent: #6b6682;
-      --scrollbar-auto-track: #443c5b;
-      --brand-color: #9B78CC;
-      --brand-color-hover: #896BB5;
-      --text-muted: #9691ae;
-      --text-normal: #fffeff;
-      --brand-experiment-30a: #6b6680;
-      --brand-experiment-200: #f4f2f7;
-      --channels-default: #a5a0b8;
-      --rs-online-color: #9cfcf1;
+      --accent-color: 253;
 }
 
 /* moar stuff */
 
 :root {
+      --background-secondary: hsl(var(--accent-color), 25%, 28%);
+      --background-primary: hsl(var(--accent-color), 19%, 35%);
+      --scrollbar-thin-thumb: hsl(var(--accent-color), 26%, 23%);
+      --nightcord-accent: hsl(var(--accent-color), 12%, 45%);
+      --scrollbar-auto-track: hsl(var(--accent-color), 21%, 30%);
+      --brand-color: hsl(var(--accent-color), 45%, 64%);
+      --brand-color-hover: hsl(var(--accent-color), 33%, 56%);
+      --text-muted: hsl(var(--accent-color), 15%, 63%);
+      --text-normal: hsl(var(--accent-color), 100%, 100%);
+      --brand-experiment-30a: hsl(var(--accent-color), 11%, 45%);
+      --brand-experiment-200: hsl(var(--accent-color), 24%, 96%);
+      --channels-default: hsl(var(--accent-color), 14%, 67%);
+      --background-secondary-alt: var(--background-secondary);
+      --background-tertiary: var(--background-secondary);
       --background-modifier-accent: var(--nightcord-accent);
       --background-modifier-selected: var(--background-primary);
       --background-modifier-hover: var(--background-primary);
       --channeltextarea-background: var(--background-secondary);
       --background-accent: var(--background-primary);
-      --background-floating: var(--background-primary);
+      --background-floating: var(--background-secondary);
       --scrollbar-auto-thumb: var(--scrollbar-thin-thumb);
       --scrollbar-auto-scrollbar-color-thumb: var(--scrollbar-thin-thumb);
       --scrollbar-auto-scrollbar-color-track: var(--scrollbar-auto-track);
@@ -109,7 +109,7 @@
 
 /*Add Friend*/
 [aria-label="Add Friend"] {
-    background-color: #6b6682 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 /*Buttons in settings*/
@@ -327,6 +327,11 @@ button[aria-label="Open sticker picker"] {
     background-color: var(--nightcord-accent);
 }
 
+
 .modeMuted-onO3r- .icon-1DeIlz, .modeMuted-onO3r- .name-23GUGE {
     color: var(--text-muted);
+}
+
+.button-F9qN4n{
+    background-color: var(--background-primary);
 }
