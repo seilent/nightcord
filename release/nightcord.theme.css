@@ -318,3 +318,12 @@ button[aria-label="Open sticker picker"] {
 .roleColor-rz2vM0{
     color: var(--text-normal) !important;
 }
+
+
+.bd-button{
+    background-color: var(--nightcord-accent);
+}
+
+.bd-addon-views .bd-view-button.selected{
+    background-color: var(--nightcord-accent);
+}
