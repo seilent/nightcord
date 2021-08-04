@@ -1,7 +1,7 @@
 /**
  * @name Nightcord
  * @author Seilent
- * @version 1.1.0
+ * @version 1.2.0
  * @description Discord theme based on niigo's nightcord theme
  * @source https://github.com/seilent/Nightcord
 */
@@ -31,6 +31,7 @@
       --channels-default: hsl(var(--accent-color), 14%, 67%);
       --background-secondary-alt: var(--background-secondary);
       --background-tertiary: var(--background-secondary);
+      --background-modifier-active: var(--nightcord-accent);
       --background-modifier-accent: var(--nightcord-accent);
       --background-modifier-selected: var(--background-primary);
       --background-modifier-hover: var(--background-primary);
@@ -43,12 +44,13 @@
       --interactive-normal: var(--text-normal);
       --interactive-muted: var(--text-normal);
       --brand-experiment-15a: var(--scrollbar-thin-thumb);
-      --brand-experiment-560: var(--background-secondary);
+      --brand-experiment-560: var(--nightcord-accent);
       --brand-experiment-600: var(--background-secondary);
       --background-mentioned: var(--background-secondary);
       --background-mentioned-hover: var(--background-secondary);
       --brand-experiment: var(--background-primary);
-      --text-link: var(--text-normal);
+      --text-link: var(--text-muted);
+      --deprecated-card-bg: var(--background-secondary);
     }
     
 .wordmarkWindows-1v0lYD {
@@ -68,6 +70,10 @@
 .theme-dark .wrapperAudio-1jDe0Q {
     border-color: var(--nightcord-accent);
     background-color: var(--nightcord-accent);
+}
+
+.mediaBarGrabber-1FqnbN, .mediaBarProgress-1xaPtl, .mediaBarProgress-1xaPtl:after, .mediaBarProgress-1xaPtl:before {
+    background-color: var(--scrollbar-auto-track);
 }
 
 .attachment-33OFj0 {
@@ -114,7 +120,7 @@
 
 /*Buttons in settings*/
 .lookFilled-1Gx00P.colorBrand-3pXr91{
-    background-color: var(--nightcord-accent);
+    background-color: var(--background-primary);
 }
 
 button[aria-label="Send a gift"] {
@@ -156,6 +162,10 @@ button[aria-label="Open sticker picker"] {
 /*help button*/
 .anchor-3Z-8Bb .iconWrapper-2OrFZ1 {
     display : none;
+}
+
+.anchor-3Z-8Bb {
+    color: var(--text-normal);
 }
 
 /*gif picker*/
@@ -303,7 +313,7 @@ button[aria-label="Open sticker picker"] {
 }
 
 .channelTextArea-rNsIhG {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .base-gE7OpD{
@@ -334,4 +344,28 @@ button[aria-label="Open sticker picker"] {
 
 .button-F9qN4n{
     background-color: var(--background-primary);
+}
+
+.closeButton-1tv5uR {
+    border-color: var(--text-muted);
+}
+
+.keybind-KpFkfr {
+    color: var(--text-muted) !important;
+}
+
+.colorGrey-2DXtkV:hover {
+    background-color: var(--nightcord-accent) !important;
+}
+
+.descriptionWrapper-1YBY_J {
+    color: var(--text-muted) !important;
+}
+
+.bar-2Qqk5Z {
+    background: var(--background-secondary) !important;
+}
+
+.barFill-23-gu- {
+    background: var(--scrollbar-auto-track);
 }
