@@ -163,7 +163,7 @@
   }
   
   .barFill-23-gu- {
-    background: var(--scrollbar-auto-track);
+    background: var(--background-secondary);
   }
   
   .pill-3N7f9r {
@@ -172,6 +172,10 @@
   
   .total-i6us2n:after {
     border-right-color: var(--scrollbar-auto-track);
+  }
+
+  .bar-2Qqk5Z {
+    background: var(--rencord-accent) !important;
   }
   
   .paymentHeader-3QlZQi {
@@ -244,14 +248,15 @@
   }
   
   [aria-label="Add Friend"],
-  .bottomDivider-1K9Gao,
   .codeRedemptionRedirect-1wVR4b,
   .lookFilled-1Gx00P.colorPrimary-3b3xI6,
-  .option-96V44q:after,
+  .bottomDivider-1K9Gao {
+    background: var(--background-secondary) !important;
+  }
+
   .queryContainer-RKFJW-,
-  .bar-2Qqk5Z,
-  .bottomDivider-1K9Gao, {
-    background-color: var(--background-secondary) !important;
+  .option-96V44q:after {
+    background: var(--background-secondary) !important;
   }
   
   .colorGrey-2DXtkV:hover,
