@@ -8,7 +8,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&family=Nunito:wght@400&display=swap');
 @import url('https://cdn.jsdelivr.net/gh/seilent/discord-serverlist-drawer@main/theme.theme.css');
-@import url('https://cdn.jsdelivr.net/gh/seilent/Nightcord@main/base/base.css');
 
 :root {
       --font-primary: "Nunito";
@@ -181,6 +180,10 @@
   .paymentHeader-3QlZQi {
     border-color: var(--rencord-accent) !important;
   }
+
+  .selected-1JjBPm {
+    background-color: var(--rencord-accent) !important;
+  }
   
   .markDash-3hAolZ {
     background: var(--text-muted) !important;
@@ -214,7 +217,7 @@
   
   .modeMuted-onO3r- .icon-1DeIlz,
   .modeMuted-onO3r- .name-23GUGE,
-  .radioIconForeground-XwlXQN {
+  .radioIconForeground-XwlXQN, {
     color: var(--text-muted);
   }
   
@@ -283,7 +286,8 @@
   .iconContainer-2-XQPY,
   .colorPremium-p4p7qO .icon-LYJorE,
   .content-1o0f9g,
-  .h5-18_1nd {
+  .h5-18_1nd,
+  .circleIconButton-1QV--U {
     color: var(--text-normal);
   }
   
