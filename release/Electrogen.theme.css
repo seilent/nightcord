@@ -13,7 +13,7 @@
       --font-primary: "Nunito";
       --font-japanese: "Noto Sans JP";
       
-      --accent-hue: 268;
+      --accent-hue: 43;
       --accent-saturation: 30%;
       --accent-light: 28%;
 }
@@ -23,7 +23,7 @@
 :root {
 
       --rencord-accent: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2), calc(var(--accent-light) * 1.6));
-      --channels-default: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.2), 75%);
+      --channels-default: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.2), 65%);
       --text-normal: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 95%);
       --text-muted: hsl(var(--accent-hue), calc(var(--accent-saturation) / 3), 70%);
       --text-link: hsl(var(--accent-hue), calc(var(--accent-saturation) * 3), 90%);
@@ -428,4 +428,10 @@ button[aria-label="Open sticker picker"] {
     background-color: var(--scrollbar-auto-track);
 }
 
+.total-i6us2n {
+    background-color: var(--scrollbar-auto-track);
+}
 
+.total-i6us2n:after {
+    border-right-color: var(--scrollbar-auto-track);
+}
