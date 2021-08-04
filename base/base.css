@@ -137,10 +137,6 @@
   r: 2;
 }
 
-.modeMuted-onO3r- .icon-1DeIlz, .modeMuted-onO3r- .name-23GUGE {
-  color: var(--text-muted);
-}
-
 .barFill-23-gu- {
   background: var(--scrollbar-auto-track);
 }
@@ -186,6 +182,13 @@ button[aria-label="Open sticker picker"],
 
 
 /* CLEANUP */
+
+.modeMuted-onO3r- .icon-1DeIlz,
+.modeMuted-onO3r- .name-23GUGE,
+.radioIconForeground-XwlXQN
+ {
+  color: var(--text-muted);
+}
 
 .button-F9qN4n,
 .peopleColumn-29fq28,
@@ -281,7 +284,8 @@ button[aria-label="Open sticker picker"],
 .bd-button,
 .bd-addon-views .bd-view-button.selected,
 .attachment-33OFj0,
-.wrapperAudio-1jDe0Q {
+.wrapperAudio-1jDe0Q,
+.item-26Dhrx[aria-checked=true] {
   background-color: var(--rencord-accent);
 }
 
