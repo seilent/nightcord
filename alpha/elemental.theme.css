@@ -350,7 +350,9 @@
   .folder-1hbNCn svg,
   .content-1o0f9g,
   .colorStandard-2KCXvj,
-  .overlayStatusText-L2IACa {
+  .overlayStatusText-L2IACa,
+  .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, 
+  .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
     color: var(--text-normal) !important;
   }
   
