@@ -35,10 +35,10 @@
   --nightcord-accent: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2), calc(var(--accent-light) * 1.6));
   --nightcord-dark: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.28), calc(var(--accent-light) / 2));
   --nightcord-light: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1), calc(var(--accent-light) * 1.1));
-  --channels-default: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 60%);
+  --channels-default: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.8), 60%);
   --text-bright: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 95%);
   --text-normal: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), calc((100% - var(--accent-light)) * 1.15));
-  --text-muted: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.8), calc((100% - var(--accent-light)) * 0.9));
+  --text-muted: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.8), calc(var(--accent-light) * 3));
   --text-link: hsl(var(--accent-hue), calc(var(--accent-saturation) * 2.5), 90%);
   --text-dark: hsl(var(--accent-hue), calc(var(--accent-saturation) / 5), calc(var(--accent-light) / 1.55));
   --background-secondary: hsl(var(--accent-hue), calc(var(--accent-saturation) / 4.28), calc(var(--accent-light) / 2));
@@ -316,6 +316,11 @@
   .unread-2lAfLh {
     display: none;
   }
+
+  /* Stream page */
+  .header-1TKi98 {
+    display: none;
+  }
   
 /* BD MINIMAL*/
 
@@ -328,7 +333,7 @@
 }
 
 .bd-minimal .timestampVisibleOnHover-2bQeI4 {
-  left: -13px !important;
+  left: -10px !important;
   font-size: 10px !important;
   color: var(--interactive-normal) !important;
 }
