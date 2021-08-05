@@ -166,9 +166,14 @@
 
   .bd-minimal [aria-label="Turn On Camera"],
   .bd-minimal [aria-label="Share Your Screen"] {
-    width: 48px !important;
-    font-size: 12px !important;
-    padding: 2px 10px !important;
+    width: 48px;
+    font-size: 12px;
+    padding: 2px 10px;
+  }
+
+  .bd-minimal [aria-label="Turn On Camera"]:hover,
+  .bd-minimal [aria-label="Share Your Screen"]:hover {
+    background-color: var(--nightcord-accent);
   }
 
   [aria-label="Learn More"] {
@@ -318,12 +323,14 @@
   width: 45px !important;
   height: 45px !important;
   left: 4px;
+  top: -1px;
   border-radius: 0;
 }
 
 .bd-minimal .timestampVisibleOnHover-2bQeI4 {
-  left: -12px !important;
+  left: -13px !important;
   font-size: 10px !important;
+  color: var(--interactive-normal) !important;
 }
 
 .bd-minimal .message-2qnXI6 {
@@ -354,7 +361,8 @@
   /* GROUPING */
   
   .modeMuted-onO3r- .icon-1DeIlz,
-  .modeMuted-onO3r- .name-23GUGE {
+  .modeMuted-onO3r- .name-23GUGE,
+  .wrapper-3WhCwL {
     color: var(--text-muted);
   }
 
@@ -394,7 +402,8 @@
   .colorStandard-2KCXvj,
   .overlayStatusText-L2IACa,
   .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, 
-  .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+  .wrapper-1BJsBx:hover .childWrapper-anI2G9,
+  .wrapper-3WhCwL:hover {
     color: var(--text-normal) !important;
   }
   
@@ -456,7 +465,8 @@
   .lookFilled-1Gx00P.colorGreen-29iAKY,
   .botTag-2WPJ74,
   .wrapper-3WhCwL:hover, 
-  .reactionMe-wv5HKu {
+  .reactionMe-wv5HKu,
+  .role-2irmRk {
     background-color: var(--nightcord-accent);
   }
   
