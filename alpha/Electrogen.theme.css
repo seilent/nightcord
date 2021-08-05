@@ -1,0 +1,402 @@
+/**
+ * @name Electrogen
+ * @author Seilent
+ * @version 1.1.0
+ * @description Discord theme based on Genshin's Electro
+ * @source https://github.com/seilent/Nightcord
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Nunito:wght@400;600&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/seilent/discord-serverlist-drawer@main/theme.theme.css');
+
+:root {
+      --font-primary: "Nunito";
+      --font-japanese: "Noto Sans JP";
+      
+      --accent-hue: 268;
+      --accent-saturation: 30%;
+      --accent-light: 28%;
+}
+
+
+/** MOAR STUFF **/
+
+:root {
+  --rencord-accent: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2), calc(var(--accent-light) * 1.6));
+  --channels-default: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.2), 65%);
+  --text-normal: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 95%);
+  --text-muted: hsl(var(--accent-hue), calc(var(--accent-saturation) / 3), 70%);
+  --text-link: hsl(var(--accent-hue), calc(var(--accent-saturation) * 3), 90%);
+  --text-dark: hsl(var(--accent-hue), calc(var(--accent-saturation) / 5), calc(var(--accent-light) / 1.55));
+  --background-secondary: hsl(var(--accent-hue), calc(var(--accent-saturation) / 4.28), calc(var(--accent-light) / 2));
+  --background-primary: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.31), calc(var(--accent-light) * 1.25));
+  --scrollbar-thin-thumb: hsl(var(--accent-hue), calc(var(--accent-saturation) / 4.28), calc(var(--accent-light) / 2.55));
+  --scrollbar-auto-track: hsl(var(--accent-hue), calc(var(--accent-saturation) / 5), calc(var(--accent-light) / 1.55));
+  --brand-color: hsl(var(--accent-hue), calc(var(--accent-saturation) * 1.8), calc(var(--accent-light) * 2.285));
+  --brand-color-hover: hsl(var(--accent-hue), calc(var(--accent-saturation) * 1.32), calc(var(--accent-light) * 2));
+  --brand-experiment-30a: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.27), calc(var(--accent-light) * 1.6));
+  --brand-experiment-200: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.04), calc(var(--accent-light) * 3.42));
+  --background-modifier-accent: var(--background-secondary) !important;
+  --header-primary: var(--text-normal);
+  --header-secondary: var(--text-muted);
+  --background-accent: var(--rencord-accent) !important;
+  --background-secondary-alt: var(--background-secondary);
+  --background-tertiary: var(--background-secondary);
+  --background-modifier-active: var(--rencord-accent);
+  --background-modifier-accent: var(--rencord-accent);
+  --background-modifier-selected: var(--background-primary);
+  --background-modifier-hover: var(--scrollbar-auto-track);
+  --channeltextarea-background: var(--background-secondary);
+  --control-brand-foreground: var(--text-dark);
+  --background-accent: var(--background-primary);
+  --background-floating: var(--background-secondary);
+  --scrollbar-auto-thumb: var(--scrollbar-thin-thumb);
+  --scrollbar-auto-scrollbar-color-thumb: var(--scrollbar-thin-thumb);
+  --scrollbar-auto-scrollbar-color-track: var(--scrollbar-auto-track);
+  --interactive-active: var(--text-normal);
+  --interactive-normal: var(--text-normal);
+  --interactive-hover: var(--text-normal);
+  --interactive-muted: var(--text-muted);
+  --brand-experiment-15a: var(--scrollbar-thin-thumb);
+  --brand-experiment-560: var(--rencord-accent);
+  --brand-experiment-600: var(--background-secondary);
+  --background-mentioned: var(--background-secondary);
+  --background-mentioned-hover: var(--background-secondary);
+  --brand-experiment: var(--background-primary);
+  --deprecated-card-bg: var(--background-secondary);
+  --font-weight: 400;
+  }
+  
+  /* LIGHT THEME */
+  .theme-light{
+    --rencord-accent: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.5), calc(var(--accent-light) * 1.04));
+    --channels-default: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.2), 25%);
+    --text-normal: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 15%);
+    --text-muted: hsl(var(--accent-hue), calc(var(--accent-saturation) / 3), 25%);
+    --text-link: hsl(var(--accent-hue), calc(var(--accent-saturation) * 3), 10%);
+    --text-dark: hsl(var(--accent-hue), calc(var(--accent-saturation) / 5), calc(var(--accent-light) / 1.55));
+    --background-secondary: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1), calc(var(--accent-light) / 1));
+    --background-primary: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.31), calc(var(--accent-light) * 1.2));
+    --scrollbar-thin-thumb: hsl(var(--accent-hue), calc(var(--accent-saturation) / 4.28), calc(var(--accent-light) / 2.55));
+    --scrollbar-auto-track: hsl(var(--accent-hue), calc(var(--accent-saturation) / 5), calc(var(--accent-light) / 1.55));
+    --brand-color: hsl(var(--accent-hue), calc(var(--accent-saturation) * 1.8), calc(var(--accent-light) * 2.285));
+    --brand-color-hover: hsl(var(--accent-hue), calc(var(--accent-saturation) * 1.32), calc(var(--accent-light) * 2));
+    --brand-experiment-30a: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.27), calc(var(--accent-light) * 1.6));
+    --brand-experiment-160: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.27), calc(var(--accent-light) * 1.6));
+    --brand-experiment-200: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.04), calc(var(--accent-light) * 3.42));
+    --background-modifier-accent: var(--background-secondary) !important;
+    --header-primary: var(--text-normal);
+    --header-secondary: var(--text-muted);
+    --background-accent: var(--rencord-accent) !important;
+    --background-secondary-alt: var(--background-secondary);
+    --background-tertiary: var(--background-secondary);
+    --background-modifier-active: var(--rencord-accent);
+    --background-modifier-accent: var(--rencord-accent);
+    --background-modifier-selected: var(--background-primary);
+    --background-modifier-hover: var(--scrollbar-auto-track);
+    --channeltextarea-background: var(--background-secondary);
+    --control-brand-foreground: var(--text-dark);
+    --background-accent: var(--background-primary);
+    --background-floating: var(--background-secondary);
+    --scrollbar-auto-thumb: var(--scrollbar-thin-thumb);
+    --scrollbar-auto-scrollbar-color-thumb: var(--scrollbar-thin-thumb);
+    --scrollbar-auto-scrollbar-color-track: var(--scrollbar-auto-track);
+    --interactive-active: var(--text-normal);
+    --interactive-normal: var(--text-normal);
+    --interactive-hover: var(--text-normal);
+    --interactive-muted: var(--text-muted);
+    --brand-experiment-15a: var(--rencord-accent);
+    --brand-experiment-530: var(--text-link);
+    --brand-experiment-560: var(--rencord-accent);
+    --brand-experiment-600: var(--background-secondary);
+    --background-mentioned: var(--background-secondary);
+    --background-mentioned-hover: var(--background-secondary);
+    --brand-experiment: var(--text-dark);
+    --deprecated-card-bg: var(--background-secondary);
+    --font-weight: 600;
+  }
+
+  * {
+    font-weight: var(--font-weight) !important;
+  }
+
+  .theme-light .barButtonBase-2uLO1z {
+    color: var(--text-normal);
+  }
+  
+  
+  /* END LIGHT THEME */
+
+  .header-2N-gMV{
+    color:var(--text-normal) !important;
+  }
+    /* Remove Role Color */
+  .username-1A8OIy {
+    color: var(--text-normal) !important;
+  }
+
+  [aria-label="Learn More"] {
+    display: none;
+  }
+    
+  .wordmarkWindows-1v0lYD {
+    display:none;
+  }
+  
+  .audioControls-2HsaU6{
+    background-color: var(--brand-experiment);
+  }
+  
+  .divider-JfaTT5 {
+    --divider-color: var(--background-secondary);
+  }
+  
+  .desaturateUserColors-1gar-1{
+    filter: brightness(1) !important;
+  }
+  
+  .footer-3mqk7D {
+    box-shadow: inset 0 1px 0 var(--background-primary) !important;
+    -webkit-box-shadow: inset 0 1px 0 var(--background-primary);
+  }
+  
+  /*help button*/
+  .anchor-3Z-8Bb .iconWrapper-2OrFZ1 {
+    display : none;
+  }
+  
+  .resultsGroup-r_nuzN:before {
+    border-color: var(--background-primary) !important;
+  }
+  
+  .iconContainer-1BBaeJ {
+    margin-right: 0px;
+    margin-left: -6px;
+  }
+  
+  #channels path[d="M14 8C14 7.44772 13.5523 7 13 7H9.76001L10.3657 3.58738C10.4201 3.28107 10.1845 3 9.87344 3H8.88907C8.64664 3 8.43914 3.17391 8.39677 3.41262L7.76001 7H4.18011C3.93722 7 3.72946 7.17456 3.68759 7.41381L3.51259 8.41381C3.45905 8.71977 3.69449 9 4.00511 9H7.41001L6.35001 15H2.77011C2.52722 15 2.31946 15.1746 2.27759 15.4138L2.10259 16.4138C2.04905 16.7198 2.28449 17 2.59511 17H6.00001L5.39427 20.4126C5.3399 20.7189 5.57547 21 5.88657 21H6.87094C7.11337 21 7.32088 20.8261 7.36325 20.5874L8.00001 17H14L13.3943 20.4126C13.3399 20.7189 13.5755 21 13.8866 21H14.8709C15.1134 21 15.3209 20.8261 15.3632 20.5874L16 17H19.5799C19.8228 17 20.0306 16.8254 20.0724 16.5862L20.2474 15.5862C20.301 15.2802 20.0655 15 19.7549 15H16.35L16.6758 13.1558C16.7823 12.5529 16.3186 12 15.7063 12C15.2286 12 14.8199 12.3429 14.7368 12.8133L14.3504 15H8.35045L9.41045 9H13C13.5523 9 14 8.55228 14 8Z"] {
+    d: path('M17,12a4.78,4.78,0,1,1-4.78-4.77A4.78,4.78,0,0,1,17,12ZM12.18,8.76A3.24,3.24,0,1,0,15.43,12,3.24,3.24,0,0,0,12.18,8.76Z') !important;
+  }
+  
+  #channels path[d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z"] {
+    d: path('M17,12a4.78,4.78,0,1,1-4.78-4.77A4.78,4.78,0,0,1,17,12Z') !important;
+  }
+  
+  #channels path[d="M5.43309 21C5.35842 21 5.30189 20.9325 5.31494 20.859L5.99991 17H2.14274C2.06819 17 2.01168 16.9327 2.02453 16.8593L2.33253 15.0993C2.34258 15.0419 2.39244 15 2.45074 15H6.34991L7.40991 9H3.55274C3.47819 9 3.42168 8.93274 3.43453 8.85931L3.74253 7.09931C3.75258 7.04189 3.80244 7 3.86074 7H7.75991L8.45234 3.09903C8.46251 3.04174 8.51231 3 8.57049 3H10.3267C10.4014 3 10.4579 3.06746 10.4449 3.14097L9.75991 7H15.7599L16.4523 3.09903C16.4625 3.04174 16.5123 3 16.5705 3H18.3267C18.4014 3 18.4579 3.06746 18.4449 3.14097L17.7599 7H21.6171C21.6916 7 21.7481 7.06725 21.7353 7.14069L21.4273 8.90069C21.4172 8.95811 21.3674 9 21.3091 9H17.4099L17.0495 11.04H15.05L15.4104 9H9.41035L8.35035 15H10.5599V17H7.99991L7.30749 20.901C7.29732 20.9583 7.24752 21 7.18934 21H5.43309Z"] {
+    d: path('M17,12a4.78,4.78,0,1,1-4.78-4.77A4.78,4.78,0,0,1,17,12Z') !important;
+  }
+  
+  #channels path[d="M15.44 6.99992C15.5725 6.99992 15.68 7.10737 15.68 7.23992V8.75992C15.68 8.89247 15.5725 8.99992 15.44 8.99992H9.41045L8.35045 14.9999H10.56V16.9999H8.00001L7.36325 20.5873C7.32088 20.826 7.11337 20.9999 6.87094 20.9999H5.88657C5.57547 20.9999 5.3399 20.7189 5.39427 20.4125L6.00001 16.9999H2.59511C2.28449 16.9999 2.04905 16.7197 2.10259 16.4137L2.27759 15.4137C2.31946 15.1745 2.52722 14.9999 2.77011 14.9999H6.35001L7.41001 8.99992H4.00511C3.69449 8.99992 3.45905 8.71969 3.51259 8.41373L3.68759 7.41373C3.72946 7.17448 3.93722 6.99992 4.18011 6.99992H7.76001L8.39677 3.41254C8.43914 3.17384 8.64664 2.99992 8.88907 2.99992H9.87344C10.1845 2.99992 10.4201 3.28099 10.3657 3.58731L9.76001 6.99992H15.44Z"] {
+    d: path('M17,12a4.78,4.78,0,1,1-4.78-4.77A4.78,4.78,0,0,1,17,12ZM12.18,8.76A3.24,3.24,0,1,0,15.43,12,3.24,3.24,0,0,0,12.18,8.76Z') !important;
+  }
+  
+  #channels path[d="M13.44 12.9599C12.9098 12.9599 12.48 13.3897 12.48 13.9199V20.2212C12.48 20.7514 12.9098 21.1812 13.44 21.1812H14.4C14.5326 21.1812 14.64 21.2886 14.64 21.4212V23.4597C14.64 23.6677 14.8866 23.7772 15.0409 23.6377L17.4859 21.4289C17.6623 21.2694 17.8917 21.1812 18.1294 21.1812H22.56C23.0902 21.1812 23.52 20.7514 23.52 20.2212V13.9199C23.52 13.3897 23.0902 12.9599 22.56 12.9599H13.44Z"] {
+    d: path('M14.29,12.25a.62.62,0,0,0-.62.62V17a.63.63,0,0,0,.62.63h.63a.16.16,0,0,1,.15.16v1.32a.16.16,0,0,0,.26.12l1.59-1.44a.67.67,0,0,1,.42-.16h2.89a.63.63,0,0,0,.62-.63v-4.1a.62.62,0,0,0-.62-.62Z') !important;
+  }
+  
+  #channels path[d="M13.4399 12.96C12.9097 12.96 12.4799 13.3898 12.4799 13.92V20.2213C12.4799 20.7515 12.9097 21.1813 13.4399 21.1813H14.3999C14.5325 21.1813 14.6399 21.2887 14.6399 21.4213V23.4597C14.6399 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6622 21.2695 17.8916 21.1813 18.1294 21.1813H22.5599C23.0901 21.1813 23.5199 20.7515 23.5199 20.2213V13.92C23.5199 13.3898 23.0901 12.96 22.5599 12.96H13.4399Z"] {
+    d: path('M14.29,12.25a.62.62,0,0,0-.62.62V17a.63.63,0,0,0,.62.63h.63a.16.16,0,0,1,.15.16v1.32a.16.16,0,0,0,.26.12l1.59-1.44a.67.67,0,0,1,.42-.16h2.89a.63.63,0,0,0,.62-.63v-4.1a.62.62,0,0,0-.62-.62Z') !important;
+  }
+  
+  .title-3qD0b- .children-19S4PO .iconWrapper-2OrFZ1 svg[viewBox="0 0 24 24"] path {
+    d: path('M22.06,7.22A8.18,8.18,0,0,0,20.62,6,10.61,10.61,0,0,1,21,7.66,10.43,10.43,0,0,1,21.06,10c-.08.48-.16,1-.25,1.44a5.53,5.53,0,0,1-1,1.9,6.47,6.47,0,0,1-1.36,1.22,7.8,7.8,0,0,1-1.5.82A2.48,2.48,0,0,0,17.19,13a2.29,2.29,0,0,0-1-.94A3.18,3.18,0,0,0,13.75,12a4,4,0,0,0-2.38,2.31,4.38,4.38,0,0,0,.19,3.44,5.06,5.06,0,0,0,3.63,2.69,7.38,7.38,0,0,0,2.56-.13,10.41,10.41,0,0,0,2.62-1A12.09,12.09,0,0,0,22.31,18a10.27,10.27,0,0,1-.81,1.25A10.87,10.87,0,0,1,19.87,21a10.45,10.45,0,0,1-1.25.94,12.19,12.19,0,0,1-2.81,1.38A12,12,0,0,1,12,24a12.37,12.37,0,0,1-2.57-.31,13,13,0,0,1-1.81-.56c.7,0,1.39,0,2.06,0a8.14,8.14,0,0,0,2.13-.32,6.4,6.4,0,0,0,1.25-.5c-2.81-.48-5.4-2.15-6.25-4.75a6.19,6.19,0,0,1-.19-3,2.16,2.16,0,0,0,1.31,1.25,2.27,2.27,0,0,0,1.63-.12,2.74,2.74,0,0,0,1.31-1.32A3.8,3.8,0,0,0,10.81,11,4.09,4.09,0,0,0,9.06,9.16a4.36,4.36,0,0,0-1.94-.5,4.82,4.82,0,0,0-2.31.43,5.12,5.12,0,0,0-1.94,1.63,8.92,8.92,0,0,0-1.31,4.06,15,15,0,0,0,0,3A11.79,11.79,0,0,1,.24,14.34,12,12,0,0,1,1.43,6.28,12.13,12.13,0,0,1,4.68,2.47C4.32,3,4,3.61,3.62,4.22a6.74,6.74,0,0,0-.81,1.87,5.88,5.88,0,0,0-.19,1.5A10.05,10.05,0,0,1,4,6.28,8.88,8.88,0,0,1,5.93,5.09a6.55,6.55,0,0,1,3.19-.56,6.5,6.5,0,0,1,1.75.5,7.38,7.38,0,0,1,1.69,1,2.45,2.45,0,0,0-2.19,1.06,2.7,2.7,0,0,0,.25,2.69,3.88,3.88,0,0,0,3.82,1.56,4.39,4.39,0,0,0,3.37-2.75,4.91,4.91,0,0,0,.19-3C17.65,4,16.56,2.44,14.12,1a10.47,10.47,0,0,0-2-.94A11.94,11.94,0,0,1,16.81,1,12.06,12.06,0,0,1,22.44,5.9,12.32,12.32,0,0,1,24,10.22l-.81-1.5A8.67,8.67,0,0,0,22.06,7.22Z') !important;
+    color: var(--text-normal) !important;
+  }
+  
+  .homeIcon-FuNwkv{
+    margin-top: -8px !important;
+  }
+  
+  .homeIcon-FuNwkv path{
+    d: path('M22.16,8.27,19.72,5.84,14,.13,8.28,5.84,5.83,8.28.11,14l5.72,5.72,2.44,2.42L14,27.87l5.73-5.73,2.43-2.41L27.89,14ZM18.45,22.14,14,26.6,9.53,22.14l-3.7-3.7L1.37,14,5.83,9.56,9.55,5.84,14,1.4l4.44,4.44,3.72,3.71L26.61,14l-4.45,4.45ZM13.9,9,9,13.92,13.9,18.8l4.9-4.88Zm0,9L9.69,13.88,13.88,9.7l4.17,4.18Zm4.73,1.65L14,24.31l-2.16-2.17L9.39,19.7ZM24.32,14,19.7,18.62V9.38l2.46,2.46ZM18.61,8.3H9.39l2.46-2.46L14,3.69l2.15,2.15ZM8.28,9.41v9.18L5.83,16.15,3.68,14l2.15-2.15Z') !important;
+  }
+  
+  .scrollableContainer-2NUZem {
+    border-radius: 3px;
+  }
+  
+  .channelTextArea-rNsIhG {
+    margin-bottom: 16px;
+  }
+  
+  .base-gE7OpD{
+    font-size: 10px;
+    height: 14px;
+  }
+  
+  .ellipsis-19qdx6 circle{
+    r: 2;
+  }
+  
+  .barFill-23-gu- {
+    background: var(--background-secondary);
+  }
+  
+  .pill-3N7f9r {
+    top: 22px !important;
+  }
+  
+  .total-i6us2n:after {
+    border-right-color: var(--scrollbar-auto-track);
+  }
+
+  .bar-2Qqk5Z {
+    background: var(--rencord-accent) !important;
+  }
+  
+  .paymentHeader-3QlZQi {
+    border-color: var(--rencord-accent) !important;
+  }
+
+  .selected-1JjBPm {
+    background-color: var(--rencord-accent) !important;
+  }
+  
+  .markDash-3hAolZ {
+    background: var(--text-muted) !important;
+  }
+  
+  .nowPlaying-284llR {
+    background-color: hsl(var(--accent-hue),calc(var(--saturation-factor, 1)*17.3%),43.9%) !important;
+  }
+  
+  .gameName-1RiWHm{
+    color: hsl(var(--accent-hue),calc(var(--saturation-factor, 1)*37.3%),95%) !important;
+  }
+  
+  /*REMOVING STUFF*/
+  
+  button[aria-label="Send a gift"],
+  button[aria-label="Open GIF picker"],
+  button[aria-label="Open sticker picker"],
+  .da-channelTextArea > .container-JHR0NT,
+  .queryShortcut-hJIQMF,
+  #channels path[d="M21.025 5V4C21.025 2.88 20.05 2 19 2C17.95 2 17 2.88 17 4V5C16.4477 5 16 5.44772 16 6V9C16 9.55228 16.4477 10 17 10H19H21C21.5523 10 22 9.55228 22 9V5.975C22 5.43652 21.5635 5 21.025 5ZM20 5H18V4C18 3.42857 18.4667 3 19 3C19.5333 3 20 3.42857 20 4V5Z"],
+  #channels path[d="M22.545 4.91992V3.91992C22.545 2.79992 21.57 1.91992 20.52 1.91992C19.47 1.91992 18.52 2.79992 18.52 3.91992V4.91992H17.76C17.6275 4.91992 17.52 5.02737 17.52 5.15992V9.67992C17.52 9.81247 17.6275 9.91992 17.76 9.91992H23.28C23.4126 9.91992 23.52 9.81247 23.52 9.67992V5.15992C23.52 5.02737 23.4126 4.91992 23.28 4.91992H22.545ZM21.52 4.91992H19.52V3.91992C19.52 3.34849 19.9867 2.91992 20.52 2.91992C21.0533 2.91992 21.52 3.34849 21.52 3.91992V4.91992Z"],
+  [aria-label="Voice"],
+  [aria-label="Voice (Limited)"],
+  .unread-2lAfLh {
+    display: none;
+  }
+  
+  
+  /* CLEANUP */
+  
+  .modeMuted-onO3r- .icon-1DeIlz,
+  .modeMuted-onO3r- .name-23GUGE,
+  .radioIconForeground-XwlXQN, {
+    color: var(--text-muted);
+  }
+  
+  .button-F9qN4n,
+  .peopleColumn-29fq28,
+  .searchAnswer-3Dz2-q,
+  .searchFilter-2ESiM3,
+  .lookFilled-1Gx00P.colorGrey-2DXtkV {
+    background-color: var(--background-primary);
+  }
+  
+  .displayedNick-3xxvzU,
+  .filter-3Y_im-,
+  .roleColor-rz2vM0,
+  .markValue-2DwdXI,
+  .checkbox-1ix_J3,
+  .metadataSize-2UOOLK,
+  .option-1B5ZV8 {
+    color: var(--text-normal) !important;
+  }
+  
+  .option-1B5ZV8,
+  .expandedInfo-3kfShd,
+  .root-1gCeng,
+  .footer-2gL1pp,
+  .uploadModal-2ifh8j,
+  .footer-3mqk7D,
+  .colorGrey-2DXtkV
+  {
+    background-color: var(--background-primary) !important;
+  }
+  
+  [aria-label="Add Friend"],
+  .codeRedemptionRedirect-1wVR4b,
+  .lookFilled-1Gx00P.colorPrimary-3b3xI6,
+  .bottomDivider-1K9Gao {
+    background: var(--background-secondary) !important;
+  }
+
+  .queryContainer-RKFJW-,
+  .option-96V44q:after {
+    background: var(--background-secondary) !important;
+  }
+  
+  .colorGrey-2DXtkV:hover,
+  .colorGrey-2DXtkV:hover {
+    background-color: var(--rencord-accent) !important;
+  }
+  
+  .notice-3bPHh-.colorStreamerMode-2SJAUN,
+  .lookFilled-1Gx00P.colorPrimary-3b3xI6,
+  .app-2rEoOp .chat-3bRxxu .newMessagesBar-265mhP,
+  .resultsGroup-r_nuzN,
+  .wrapper-2aW0bm,
+  .content-1o0f9g,
+  .peopleListItem-2nzedh:hover,
+  .pageActions-1SVAnA {
+    background-color: var(--background-secondary);
+  }
+  
+  .metadata-3WGS0M,
+  .modeSelected-346R90 .icon-1DeIlz, .modeSelected-346R90:hover .icon-1DeIlz, .modeUnread-1qO3K1 .icon-1DeIlz, .modeUnread-1qO3K1:hover .icon-1DeIlz,
+  .anchor-3Z-8Bb,
+  .container-2ax-kl,
+  .label-22pbtT,
+  .iconContainer-2-XQPY,
+  .colorPremium-p4p7qO .icon-LYJorE,
+  .content-1o0f9g,
+  .h5-18_1nd,
+  .circleIconButton-1QV--U, 
+  .theme-light .iconBackgroundTierOne-2OQMBY {
+    color: var(--text-normal);
+  }
+  
+  .selected-rZcOL-,
+  .selected-rZcOL-:after {
+    background: var(--background-primary) !important;
+  }
+  
+  .displayUsername-Qekxml,
+  .answer-1n6g43 {
+    color: var(--channels-default) !important;
+  }
+  
+  .autocomplete-1vrmpx,
+  .selected-1Tbx07,
+  .pill-2pQByF {
+    background-color: var(--background-tertiary);
+  }
+  
+  .mediaBarGrabber-1FqnbN, .mediaBarProgress-1xaPtl, .mediaBarProgress-1xaPtl:after, .mediaBarProgress-1xaPtl:before,
+  .lookFilled-1Gx00P.colorBrand-3pXr91,
+  .peopleListItem-2nzedh:hover .actionButton-uPB8Fs,
+  .total-i6us2n {
+    background-color: var(--scrollbar-auto-track);
+  }
+  
+  .bd-button,
+  .bd-addon-views .bd-view-button.selected,
+  .attachment-33OFj0,
+  .wrapperAudio-1jDe0Q,
+  .item-26Dhrx[aria-checked=true] {
+    background-color: var(--rencord-accent);
+  }
+  
+  .wrapperAudio-1jDe0Q,
+  .attachment-33OFj0 {
+    border-color: var(--rencord-accent);
+  }
+  
+  .closeButton-1tv5uR,
+  .keybind-KpFkfr,
+  .descriptionWrapper-1YBY_J {
+    border-color: var(--text-muted) !important;
+  }
