@@ -1,7 +1,7 @@
 /**
  * @name Elemental
  * @author Seilent
- * @version 1.2.0
+ * @version 1.2.2
  * @description Discord theme based on Genshin's element colors.
  * @source https://github.com/seilent/Nightcord
 */
@@ -29,7 +29,7 @@
   --font-weight: 400;
   --nightcord-accent: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2), calc(var(--accent-light) * 1.6));
   --nightcord-dark: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.28), calc(var(--accent-light) / 2));
-  --nightcord-light: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2), calc(var(--accent-light) * 2));
+  --nightcord-light: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1), calc(var(--accent-light) / 1.1));
   --channels-default: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 60%);
   --text-bright: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 95%);
   --text-normal: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 85%);
@@ -84,7 +84,7 @@
   
   /* LIGHT THEME */
   .theme-light{
-    --nightcord-accent: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.5), calc(var(--accent-light) * 1.04));
+    --nightcord-accent: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.5), calc(var(--accent-light) / 1.9));
     --channels-default: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.2), 25%);
     --text-normal: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 15%);
     --text-muted: hsl(var(--accent-hue), calc(var(--accent-saturation) / 3), 25%);
@@ -93,6 +93,7 @@
     --background-secondary: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1), calc(var(--accent-light) / 1));
     --background-primary: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.31), calc(var(--accent-light) * 1.2));
     --brand-experiment-160: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.27), calc(var(--accent-light) * 1.6));
+    --brand-experiment: var(--nightcord-dark);
     --font-weight: 600;
   }
 
@@ -100,9 +101,25 @@
     font-weight: var(--font-weight) !important;
   }
 
-  .theme-light .barButtonBase-2uLO1z {
+  /*.theme-light .barButtonBase-2uLO1z {
     color: var(--text-normal);
   }
+
+  .theme-light .overlayToggleIconOn-3UNmty .fill-1ugeBG{
+    fill: var(--nightcord-dark);
+  }
+  
+  .theme-light .lookFilled-1Gx00P.colorBrand-3pXr91 {
+    background-color: var(--nightcord-light);
+  }
+
+  .theme-light .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+    background-color: var(--nightcord-dark);
+  }
+
+  .theme-light .lookLink-9FtZy-.colorPrimary-3b3xI6 {
+    color: var(--text-normal);
+  }*/
   
   /* END LIGHT THEME */
 
@@ -125,9 +142,9 @@
 
   [aria-label="Turn On Camera"],
   [aria-label="Share Your Screen"] {
-    width: 48px;
-    font-size: 12px;
-    padding: 2px 10px;
+    width: 48px !important;
+    font-size: 12px !important;
+    padding: 2px 10px !important;
   }
 
   [aria-label="Learn More"] {
