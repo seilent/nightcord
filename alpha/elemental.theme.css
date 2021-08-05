@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Nunito:wght@400;600&display=swap');
 
 /*Serverlist Drawer by Freeplayg*/
-@import url('https://seilent.github.io/discord-serverlist-drawer/serverlist.theme.css');
+@import url('https://cdn.jsdelivr.net/gh/seilent/discord-serverlist-drawer@main/serverlist.theme.css');
 
 :root {
       --font-primary: "Nunito";
@@ -122,6 +122,13 @@
   .username-1A8OIy {
     color: var(--text-normal) !important;
   }*/
+
+  [aria-label="Turn On Camera"],
+  [aria-label="Share Your Screen"] {
+    width: 48px;
+    font-size: 12px;
+    padding: 2px 10px;
+  }
 
   [aria-label="Learn More"] {
     display: none;
