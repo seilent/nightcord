@@ -1,7 +1,7 @@
 /**
  * @name Elemental
  * @author Seilent
- * @version 1.2.2
+ * @version 1.2.5
  * @description Discord theme based on Genshin's element colors.
  * @source https://github.com/seilent/Nightcord
 */
@@ -16,9 +16,14 @@
       --font-primary: "Nunito";
       --font-japanese: "Noto Sans JP";
       
-      --accent-hue: 268;
+      --accent-hue: 280;
       --accent-saturation: 30%;
-      --accent-light: 28%;
+
+      /* Changing the light might cause the background to become too bright */
+      --accent-light: 20%;
+
+      /* change the name into other icon
+         currently available : genshin element */
       --icon: var(--icon-electro);
 }
 
@@ -32,9 +37,9 @@
   --nightcord-light: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1), calc(var(--accent-light) * 1.1));
   --channels-default: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 60%);
   --text-bright: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 95%);
-  --text-normal: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 85%);
-  --text-muted: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.5), 75%);
-  --text-link: hsl(var(--accent-hue), calc(var(--accent-saturation) * 3), 90%);
+  --text-normal: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), calc((100% - var(--accent-light)) * 1.15));
+  --text-muted: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.8), calc((100% - var(--accent-light)) * 0.9));
+  --text-link: hsl(var(--accent-hue), calc(var(--accent-saturation) * 2.5), 90%);
   --text-dark: hsl(var(--accent-hue), calc(var(--accent-saturation) / 5), calc(var(--accent-light) / 1.55));
   --background-secondary: hsl(var(--accent-hue), calc(var(--accent-saturation) / 4.28), calc(var(--accent-light) / 2));
   --background-primary: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.31), calc(var(--accent-light) * 1.25));
@@ -143,7 +148,7 @@
   /* END LIGHT THEME */
 
   .divider-JfaTT5 {
-    --divider-color: var(--background-secondary);
+    --divider-color: hsl(var(--accent-hue), calc(var(--accent-saturation) / 4.28), calc(var(--accent-light) / 2));
   }
 
   .title-3qD0b- .children-19S4PO .iconWrapper-2OrFZ1 svg[viewBox="0 0 24 24"] path {
@@ -159,8 +164,8 @@
     color: var(--text-normal) !important;
   }*/
 
-  [aria-label="Turn On Camera"],
-  [aria-label="Share Your Screen"] {
+  .bd-minimal [aria-label="Turn On Camera"],
+  .bd-minimal [aria-label="Share Your Screen"] {
     width: 48px !important;
     font-size: 12px !important;
     padding: 2px 10px !important;
@@ -372,7 +377,8 @@
   .circleIconButton-1QV--U, 
   .theme-light .iconBackgroundTierOne-2OQMBY,
   .radioIconForeground-XwlXQN,
-  .css-o3gndj-placeholder {
+  .css-o3gndj-placeholder,
+  .unreadPill-2HyYtt {
     color: var(--text-normal);
   }
 
