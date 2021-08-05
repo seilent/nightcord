@@ -1,5 +1,6 @@
 # **Nightcord**
 Some janky discord theme to use.
+Currently still WIP, but you can download the Alpha if you want to.
 
 ## **Previews**
 
