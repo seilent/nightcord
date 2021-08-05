@@ -29,7 +29,7 @@
   --font-weight: 400;
   --nightcord-accent: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2), calc(var(--accent-light) * 1.6));
   --nightcord-dark: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.28), calc(var(--accent-light) / 2));
-  --nightcord-light: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1), calc(var(--accent-light) / 1.1));
+  --nightcord-light: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1), calc(var(--accent-light) * 1.1));
   --channels-default: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 60%);
   --text-bright: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 95%);
   --text-normal: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 85%);
@@ -84,7 +84,9 @@
   
   /* LIGHT THEME */
   .theme-light{
-    --nightcord-accent: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.5), calc(var(--accent-light) / 1.9));
+    --nightcord-accent: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1), calc(var(--accent-light) * 1.1));
+    --nightcord-dark: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.28), calc(var(--accent-light) / 2));
+    --nightcord-light: hsl(var(--accent-hue), calc(var(--accent-saturation) * 1), calc(var(--accent-light) / 1.1));
     --channels-default: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.2), 25%);
     --text-normal: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 15%);
     --text-muted: hsl(var(--accent-hue), calc(var(--accent-saturation) / 3), 25%);
@@ -112,15 +114,32 @@
   .theme-light .lookFilled-1Gx00P.colorBrand-3pXr91 {
     background-color: var(--nightcord-light);
   }
-
-  .theme-light .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
-    background-color: var(--nightcord-dark);
+  }*/
+  .theme-light .unreadPill-2HyYtt,
+  .theme-light .navButtonActive-1MkytQ,
+  .bd-button,
+  .theme-light .lookLink-9FtZy-.colorPrimary-3b3xI6,
+  .contents-18-Yxp {
+    color: var(--text-normal);
   }
 
-  .theme-light .lookLink-9FtZy-.colorPrimary-3b3xI6 {
-    color: var(--text-normal);
-  }*/
-  
+  .theme-light .lookFilled-1Gx00P {
+    color: var(--text-normal) !important;
+  }
+
+  .theme-light .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+    background-color: var(--nightcord-accent);
+  }
+
+  .theme-light .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
+    background-color: var(--background-secondary);
+  }
+
+  [class^="css-"][class$="-control"],
+  .theme-light .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
+    border-color: var(--nightcord-dark);
+  }
+
   /* END LIGHT THEME */
 
   .divider-JfaTT5 {
