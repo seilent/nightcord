@@ -1,5 +1,5 @@
 /**
- * @name Elemental
+ * @name Elemental - Hydro
  * @author Seilent
  * @version 1.2.6
  * @description Discord theme based on Genshin's element colors.
@@ -16,15 +16,15 @@
 @import url('https://seilent.github.io/nightcord/base/base.css');
 
 :root {
-      --font-primary: "Nunito";
-      
-      --accent-hue: 280;
-      --accent-saturation: 30%;
+   --font-primary: "Nunito";
+   
+   --accent-hue: 182;
+   --accent-saturation: 30%;
 
-      /* Changing the light might cause the background to become too bright */
-      --accent-light: 20%;
+   /* Changing the light might cause the background to become too bright */
+   --accent-light: 25%;
 
-      /* change the name into other icon
-         currently available : anemo, cryo, dendro, electro, geo, hydro, pyro */
-      --icon: var(--icon-electro);
+   /* change the name into other icon
+      currently available : anemo, cryo, dendro, electro, geo, hydro, pyro */
+   --icon: var(--icon-hydro);
 }
