@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Nunito:wght@400;600&display=swap');
 
 /*Serverlist Drawer by Freeplayg*/
-@import url('https://cdn.jsdelivr.net/gh/seilent/discord-serverlist-drawer@main/serverlist.theme.css');
+@import url('https://cdn.jsdelivr.net/gh/seilent/discord-serverlist-drawer@latest/serverlist.theme.css');
 
 :root {
       --font-primary: "Nunito";
