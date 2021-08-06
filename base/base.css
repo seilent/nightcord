@@ -3,7 +3,7 @@
   --nightcord-accent: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2), calc(var(--accent-light) * 1.6));
   --nightcord-dark: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.28), calc(var(--accent-light) / 2));
   --nightcord-light: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1), calc(var(--accent-light) * 1.1));
-  --channels-default: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.8), calc(var(--accent-light) * 2.2));
+  --channels-default: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.8), calc(var(--accent-light) * 2.3));
   --text-bright: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 95%);
   --text-normal: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), calc((100% - var(--accent-light)) * 1.25));
   --text-link: hsl(var(--accent-hue), calc(var(--accent-saturation) * 2.5), 90%);
