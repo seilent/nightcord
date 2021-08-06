@@ -318,6 +318,10 @@
 }
   
   /* GROUPING */
+
+  .autocompleteInner-2mQ2AK {
+    background-color: var(--nightcord-dark);
+  }
   
   .modeMuted-onO3r- .icon-1DeIlz,
   .modeMuted-onO3r- .name-23GUGE,
@@ -432,7 +436,8 @@
   .colorGrey-2DXtkV:hover,
   .selected-1JjBPm,
   .notDetected-33MY4s,
-  [aria-controls="ADD_FRIEND-tab"] {
+  [aria-controls="ADD_FRIEND-tab"],
+  .selected-1Tbx07 {
     background-color: var(--nightcord-accent) !important;
   }
   
