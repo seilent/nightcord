@@ -12,6 +12,9 @@
 /*Serverlist Drawer by Freeplayg*/
 @import url('https://seilent.github.io/discord-serverlist-drawer/drawer.theme.css');
 
+/*Base css*/
+@import url('https://seilent.github.io/nightcord/base/base.css');
+
 :root {
       --font-primary: "Nunito";
       --font-japanese: "Noto Sans JP";
