@@ -28,13 +28,3 @@
       currently available : anemo, cryo, dendro, electro, geo, hydro, pyro */
    --icon: var(--icon-cryo);
 }
-
-
-
-/* Small fix */
-
-:root{
-   --channels-default: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.8), calc(var(--accent-light) * 2.2));
-   --text-muted: var(--channels-default);
-   --text-normal: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), calc((100% - var(--accent-light)) * 1.40));
-}
