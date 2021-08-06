@@ -3,6 +3,13 @@ Some janky BetterDiscord theme to use.
 Supports BetterDiscord's minimal mode.  
 If you don't like the server sidebar, you can just remove it from the css file.
 
+Add this to Custom CSS if you want to remove role color : 
+```
+.username-1A8OIy {
+    color: var(--text-normal) !important;
+}
+```
+
 ## **Previews**
 
 ### **Genshin Theme**
