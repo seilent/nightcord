@@ -270,12 +270,12 @@
   .channelTextArea-rNsIhG .buttons-3JBrkn {
     opacity: 0;
     transition: opacity 0.1s linear 0.1s;
-}
+  }
 
-.channelTextArea-rNsIhG .buttons-3JBrkn:hover {
+  .channelTextArea-rNsIhG .buttons-3JBrkn:hover {
     opacity: 1;
     transition: opacity 0.1s linear 0.1s;
-}
+  }
 
   /*REMOVING STUFF*/
 
