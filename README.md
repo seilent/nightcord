@@ -1,10 +1,14 @@
 # **Nightcord**
-Some janky discord theme to use.  
-Currently still WIP, but you can download the Alpha if you want to, and edit the css to change the color scheme.
+Some janky BetterDiscord theme to use.  
+Supports BetterDiscord's minimal mode.  
+If you don't like the server sidebar, you can just remove it from the css file.
 
 ## **Previews**
 
 ### **Genshin Theme**
+
+Available in few colors, you can tweak it by yourself by editing the file. The color format is in HSL.  
+But I prepared the ready to use theme too [HERE](https://github.com/seilent/nightcord/tree/main/release/elemental) if you prefer easier way.
 
 #### **Electro**
 ![DiscordPTB_YgdXM6mfV6](https://user-images.githubusercontent.com/88354811/128282286-28502f0d-7315-4f3a-b9c0-cd5c9252faa4.png)
