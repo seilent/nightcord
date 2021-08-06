@@ -1,0 +1,30 @@
+/**
+ * @name Elemental
+ * @author Seilent
+ * @version 1.2.6
+ * @description Discord theme based on Genshin's element colors.
+ * @source https://github.com/seilent/Nightcord
+*/
+
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+/*Serverlist Drawer by Freeplayg*/
+@import url('https://seilent.github.io/discord-serverlist-drawer/drawer.theme.css');
+
+/*Base css*/
+@import url('https://seilent.github.io/nightcord/base/base.css');
+
+:root {
+      --font-primary: "Nunito";
+      
+      --accent-hue: 280;
+      --accent-saturation: 30%;
+
+      /* Changing the light might cause the background to become too bright */
+      --accent-light: 20%;
+
+      /* change the name into other icon
+         currently available : anemo, cryo, dendro, electro, geo, hydro, pyro */
+      --icon: var(--icon-electro);
+}
