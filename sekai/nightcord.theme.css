@@ -52,4 +52,26 @@
   --brand-color-hover: hsl(var(--accent-hue), calc(var(--accent-saturation) * 1.32), calc(var(--accent-light) * 2));
   --brand-experiment-30a: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.27), calc(var(--accent-light) / 1.6));
   --brand-experiment-200: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.04), calc(var(--accent-light) * 3.42));
+  --background-secondary-alt: var(--background-secondary);
+  --background-tertiary: var(--background-secondary);
+  --background-modifier-active: var(--nightcord-accent);
+  --background-modifier-accent: var(--nightcord-accent);
+  --background-modifier-selected: var(--background-primary);
+  --background-modifier-hover: var(--background-primary);
+  --channeltextarea-background: var(--background-secondary);
+  --background-accent: var(--background-primary);
+  --background-floating: var(--background-secondary);
+  --scrollbar-auto-thumb: var(--scrollbar-thin-thumb);
+  --scrollbar-auto-scrollbar-color-thumb: var(--scrollbar-thin-thumb);
+  --scrollbar-auto-scrollbar-color-track: var(--scrollbar-auto-track);
+  --interactive-normal: var(--text-normal);
+  --interactive-muted: var(--text-normal);
+  --brand-experiment-15a: var(--scrollbar-thin-thumb);
+  --brand-experiment-560: var(--nightcord-accent);
+  --brand-experiment-600: var(--background-secondary);
+  --background-mentioned: var(--background-secondary);
+  --background-mentioned-hover: var(--background-secondary);
+  --brand-experiment: var(--background-primary);
+  --text-link: var(--text-muted);
+  --deprecated-card-bg: var(--background-secondary);
 }
