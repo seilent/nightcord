@@ -1,7 +1,10 @@
-# **Nightcord**
-Some janky BetterDiscord theme to use.  
-Supports BetterDiscord's minimal mode.  
-If you don't like the server sidebar, you can just remove it from the css file.
+# **Elemental**  
+  
+Based on Genshin's elements.
+Available in few colors, you can tweak it by yourself by editing the file. The color format is in HSL.  
+But I prepared the ready to use theme too [HERE](https://github.com/seilent/nightcord/tree/main/elemental/release) if you prefer easier way.
+
+Light mode still WIP, for now you can bump the **--accent-light** into 60% ~ 70% then set into light theme in discord settings.
 
 Add this to Custom CSS if you want to remove role color : 
 ```
@@ -11,14 +14,6 @@ Add this to Custom CSS if you want to remove role color :
 ```
 
 ## **Previews**
-
-### **Genshin Theme**
-
-Available in few colors, you can tweak it by yourself by editing the file. The color format is in HSL.  
-But I prepared the ready to use theme too [HERE](https://github.com/seilent/nightcord/tree/main/release/elemental) if you prefer easier way.
-
-Light mode still WIP, for now you can bump the **--accent-light** into 60% ~ 70% then set into light theme in discord settings.
-
 #### **Anemo**
 ![DiscordPTB_jSUgOOEy4c](https://user-images.githubusercontent.com/88354811/128542874-d5409921-1269-4019-9183-812eda9750b7.png)
 
