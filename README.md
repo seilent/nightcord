@@ -10,6 +10,8 @@ If you don't like the server sidebar, you can just remove it from the css file.
 Available in few colors, you can tweak it by yourself by editing the file. The color format is in HSL.  
 But I prepared the ready to use theme too [HERE](https://github.com/seilent/nightcord/tree/main/release/elemental) if you prefer easier way.
 
+Light mode still WIP, for now you can bump the **--accent-light** into 60% ~ 70% then set into light theme in discord settings.
+
 #### **Electro**
 ![DiscordPTB_YgdXM6mfV6](https://user-images.githubusercontent.com/88354811/128282286-28502f0d-7315-4f3a-b9c0-cd5c9252faa4.png)
 
