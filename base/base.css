@@ -266,7 +266,23 @@
     background-color: var(--nightcord-light);
   }
 
+  /*Button fadein*/
+  .channelTextArea-rNsIhG .buttons-3JBrkn {
+    opacity: 0;
+    transition: opacity 0.1s linear 0.1s;
+}
+
+.channelTextArea-rNsIhG .buttons-3JBrkn:hover {
+    opacity: 1;
+    transition: opacity 0.1s linear 0.1s;
+}
+
   /*REMOVING STUFF*/
+
+  /*Nitro Button*/
+  .channelTextArea-rNsIhG .buttons-3JBrkn > [aria-label] {
+    display:none;
+  }
   
   .da-channelTextArea > .container-JHR0NT,
   .queryShortcut-hJIQMF,
