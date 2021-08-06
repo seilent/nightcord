@@ -14,6 +14,8 @@ Add this to Custom CSS if you want to remove role color :
 ```
 
 ## **Previews**
+Screenshot taken with BetterDiscord minimal mode in the settings turned on. 
+
 #### **Anemo**
 ![DiscordPTB_jSUgOOEy4c](https://user-images.githubusercontent.com/88354811/128542874-d5409921-1269-4019-9183-812eda9750b7.png)
 
