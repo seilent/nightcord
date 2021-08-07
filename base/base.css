@@ -348,6 +348,10 @@
   .autocompleteInner-2mQ2AK {
     background-color: var(--nightcord-dark);
   }
+
+  .mediaBarInteractionVolume-3QZqYd{
+    background-color: var(--nightcord-dark) !important;
+  }
   
   .modeMuted-onO3r- .icon-1DeIlz,
   .modeMuted-onO3r- .name-23GUGE,
@@ -395,7 +399,13 @@
   .wrapper-3WhCwL:hover {
     color: var(--text-normal) !important;
   }
-  
+
+  .mediaBarProgress-1xaPtl,
+  .mediaBarProgress-1xaPtl::before,
+  .mediaBarProgress-1xaPtl::after{
+  background-color: var(--text-normal);
+  }
+
   .button-F9qN4n,
   .peopleColumn-29fq28,
   .searchAnswer-3Dz2-q,
@@ -483,7 +493,7 @@
     background-color: var(--background-tertiary);
   }
   
-  .mediaBarGrabber-1FqnbN, .mediaBarProgress-1xaPtl, .mediaBarProgress-1xaPtl:after, .mediaBarProgress-1xaPtl:before,
+  .mediaBarGrabber-1FqnbN,
   .peopleListItem-2nzedh:hover .actionButton-uPB8Fs,
   .total-i6us2n {
     background-color: var(--scrollbar-auto-track);
