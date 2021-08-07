@@ -535,3 +535,27 @@
     transform: rotate3d(0, 0, 1, 0deg)
   }
 }
+
+.bd-minimal .avatar-3uk_u9 .wrapper-3t9DeA foreignObject {
+  mask: none;
+}
+
+.bd-minimal .avatar-3uk_u9 [aria-label] {
+  border-radius: 0%;
+  overflow: hidden;
+}
+
+.bd-minimal .avatar-3uk_u9 .wrapper-3t9DeA rect {
+  mask: none;
+  x: 23px;
+  y: 23px;
+  width: 10px;
+  height: 10px;
+  stroke-width: 2px;
+  stroke: var(--background-secondary);
+}
+
+.bd-minimal .avatar-3uk_u9 .cursorDefault-dsQJ1n rect {
+    x: 8px;
+    y: 6px;
+}
