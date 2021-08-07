@@ -116,10 +116,18 @@
   .header-2N-gMV{
     color:var(--text-normal) !important;
   }
-    /* Remove Role Color 
-  .username-1A8OIy {
-    color: var(--text-normal) !important;
-  }*/
+  
+  .username-1A8OIy{
+    filter: saturate(1.8) contrast(.5) brightness(1.3) !important;
+  }
+
+  .bd-minimal .avatar-37jOim {
+    border-radius: 0px;
+  }
+
+  .bd-minimal .avatar-37jOim foreignObject {
+    mask: url(#);
+  }
     
   .wordmarkWindows-1v0lYD {
     display:none;
