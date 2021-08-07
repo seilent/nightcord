@@ -31,7 +31,7 @@
   --channeltextarea-background: var(--background-secondary);
   --control-brand-foreground: var(--text-dark);
   --background-accent: var(--background-primary);
-  --background-floating: var(--background-secondary);
+  --background-floating: var(--nightcord-dark);
   --scrollbar-auto-thumb: var(--scrollbar-thin-thumb);
   --scrollbar-auto-scrollbar-color-thumb: var(--scrollbar-thin-thumb);
   --scrollbar-auto-scrollbar-color-track: var(--scrollbar-auto-track);
