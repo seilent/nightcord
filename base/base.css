@@ -281,7 +281,7 @@
     transition: opacity 0.1s linear 0.1s;
   }
 
-  .channelTextArea-rNsIhG .buttons-3JBrkn:hover {
+  .channelTextArea-rNsIhG:hover .buttons-3JBrkn {
     opacity: 1;
     transition: opacity 0.1s linear 0.1s;
   }
@@ -328,6 +328,16 @@
   min-width: 96px;
   min-height: 32px;
   margin-left: 10px;
+}
+
+.bd-minimal .sidebar-2K8pFh .container-3baos1:hover .noWrap-3jynv6 {
+  opacity: 1;
+  transition: opacity 0.1s linear 0.1s;
+} 
+
+.bd-minimal .sidebar-2K8pFh .container-3baos1 .noWrap-3jynv6 {
+  opacity: 0;
+  display: flex;
 }
 
 /* BD MINIMAL END */
