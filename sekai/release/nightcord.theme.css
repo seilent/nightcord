@@ -42,7 +42,7 @@
 
 :root {
   --font-weight: 400;
-  --nightcord-accent: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.2), calc(var(--accent-light) * 1.2));
+  --nightcord-accent: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2), calc(var(--accent-light) * 1.6));
   --nightcord-dark: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.2), calc(var(--accent-light) / 1.2));
   --nightcord-light: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.2), calc(var(--accent-light) * 1.5));
   --channels-default: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 60%);
