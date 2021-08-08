@@ -9,14 +9,8 @@
 /*FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Nunito:wght@400;600&display=swap');
 
-/*Serverlist Drawer by Freeplayg*/
-@import url('https://seilent.github.io/discord-serverlist-drawer/drawer.theme.css');
-
 /*Base css*/
 @import url('https://seilent.github.io/nightcord/sekai/base/base.css');
-
-/*Compact Memberlist*/
-@import url('https://seilent.github.io/nightcord/base/module/memberlist.css');
 
 /*Minimal Member List*/
 

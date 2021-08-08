@@ -9,11 +9,8 @@
 /*FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
 
-/*Serverlist Drawer by Freeplayg*/
-@import url('https://seilent.github.io/discord-serverlist-drawer/drawer.theme.css');
-
 /*Base css*/
-@import url('https://seilent.github.io/nightcord/base/base.css');
+@import url('https://seilent.github.io/nightcord/elemental/base/base.css');
 
 :root {
    --font-primary: "Nunito";
