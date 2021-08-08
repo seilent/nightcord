@@ -1,5 +1,3 @@
-@import url('https://seilent.github.io/nightcord/module/memberlist.css');
-
 :root {
   --font-weight: 400;
   --nightcord-accent: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2), calc(var(--accent-light) * 1.6));

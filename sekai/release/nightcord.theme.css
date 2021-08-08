@@ -1,7 +1,7 @@
 /**
  * @name Nightcord
  * @author Seilent
- * @version 1.2.0
+ * @version 1.0.0
  * @description Discord theme based on niigo's nightcord theme
  * @source https://github.com/seilent/Nightcord
 */
@@ -13,20 +13,27 @@
 @import url('https://seilent.github.io/discord-serverlist-drawer/drawer.theme.css');
 
 /*Base css*/
-@import url('https://seilent.github.io/nightcord/base/base.css');
+@import url('https://seilent.github.io/nightcord/sekai/base/base.css');
+
+/*Compact Memberlist*/
+@import url('https://seilent.github.io/nightcord/base/module/memberlist.css');
+
+/*Minimal Member List*/
 
 :root {
       --font-primary: "Nunito";
       --font-japanese: "Noto Sans JP";
       
+      /*Use HSL color*/
       --accent-hue: 253;
-      --accent-saturation: 25%;
+      
 
-      /* Changing the light might cause the background to become too bright */
+      /* Changing the saturation and light might cause the background to become too bright */
+      --accent-saturation: 25%;
       --accent-light: 28%;
 
       /* change the name into other icon
-         currently available : genshin element */
+         currently available : genshin element and nightcord*/
       --icon: var(--icon-nightcord);
 }
 
@@ -35,11 +42,11 @@
 
 :root {
   --font-weight: 400;
-  --nightcord-accent: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2), calc(var(--accent-light) * 1.6));
-  --nightcord-dark: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.28), calc(var(--accent-light) / 2));
-  --nightcord-light: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1), calc(var(--accent-light) * 1.1));
+  --nightcord-accent: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.2), calc(var(--accent-light) * 1.2));
+  --nightcord-dark: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.2), calc(var(--accent-light) / 1.2));
+  --nightcord-light: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.2), calc(var(--accent-light) * 1.5));
   --channels-default: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 60%);
-  --text-bright: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), 95%);
+  --text-bright: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1), 85%);
   --text-normal: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2.5), calc((100% - var(--accent-light)) * 1.30));
   --text-muted: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.8), calc((100% - var(--accent-light)) * 0.9));
   --text-link: hsl(var(--accent-hue), calc(var(--accent-saturation) * 2.5), 90%);
@@ -54,10 +61,10 @@
   --brand-experiment-200: hsl(var(--accent-hue), calc(var(--accent-saturation) / 1.04), calc(var(--accent-light) * 3.42));
   --background-secondary-alt: var(--background-secondary);
   --background-tertiary: var(--background-secondary);
-  --background-modifier-active: var(--nightcord-accent);
-  --background-modifier-accent: var(--nightcord-accent);
+  --background-modifier-active: var(--nightcord-dark);
+  --background-modifier-accent: var(--nightcord-dark);
   --background-modifier-selected: var(--background-primary);
-  --background-modifier-hover: var(--background-primary);
+  --background-modifier-hover: var(--nightcord-accent);
   --channeltextarea-background: var(--background-secondary);
   --background-accent: var(--background-primary);
   --background-floating: var(--background-secondary);
