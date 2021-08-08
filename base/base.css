@@ -118,10 +118,6 @@
   .header-2N-gMV{
     color:var(--text-normal) !important;
   }
-  
-  .username-1A8OIy{
-    filter: saturate(180%) contrast(40%) brightness(140%) !important;
-  }
 
   .bd-minimal .avatar-37jOim {
     border-radius: 0px;
@@ -161,8 +157,8 @@
     background-color: var(--brand-experiment);
   }
   
-  .desaturateUserColors-1gar-1{
-    filter: brightness(1) !important;
+  .desaturateUserColors-1gar-1 {
+    filter: saturate(180%) contrast(40%) brightness(140%) !important;
   }
   
   .footer-3mqk7D {
