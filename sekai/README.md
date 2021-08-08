@@ -1,17 +1,14 @@
 # **Sekai**  
 Based on Project Sekai.  
 Currently only have one theme, based on 25時、ナイトコードで's Nightcord theme.  
-Work in progress, but you can get it [HERE](https://github.com/seilent/nightcord/tree/main/sekai/beta).  
-
-Add this to Custom CSS if you want to remove role color : 
-```
-.username-1A8OIy {
-    color: var(--text-normal) !important;
-}
-```
+You can get it [HERE](https://github.com/seilent/nightcord/tree/main/sekai/release).  
 
 ## **Previews**
 Screenshot taken with BetterDiscord minimal mode in the settings turned on. 
 
-#### **Nightcord**
-![DiscordPTB_gOLy08ILUW](https://user-images.githubusercontent.com/88354811/128546353-9d8d7809-c10e-499e-9978-6e58f01c7c02.png)
+#### **Nightcord** Normal Mode
+![DiscordPTB_5VEJC9TeEw](https://user-images.githubusercontent.com/88354811/128617477-38b689e0-b8ba-49a2-8cb6-9a3d7eb5c17c.png)
+
+
+#### **Nightcord** Minimal Mode (Enable Minimal Mode in BetterDiscord Settings)
+![DiscordPTB_enJtJo5JPe](https://user-images.githubusercontent.com/88354811/128617480-c7436e64-7b67-4348-a8ac-e2078799b920.png)
