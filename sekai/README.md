@@ -4,8 +4,6 @@ Currently only have one theme, based on [25時、ナイトコードで](https://
 You can get it [HERE](https://github.com/seilent/nightcord/tree/main/sekai/release).  
 
 ## **Previews**
-Screenshot taken with BetterDiscord minimal mode in the settings turned on. 
-
 #### **Nightcord** Normal Mode
 ![DiscordPTB_5VEJC9TeEw](https://user-images.githubusercontent.com/88354811/128617477-38b689e0-b8ba-49a2-8cb6-9a3d7eb5c17c.png)
 
