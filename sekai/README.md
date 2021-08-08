@@ -1,6 +1,6 @@
 # **Sekai**  
 Based on Project Sekai.  
-Currently only have one theme, based on 25時、ナイトコードで's Nightcord theme.  
+Currently only have one theme, based on [25時、ナイトコードで](https://pjsekai.sega.jp/character/unite05/index.html)'s Nightcord theme.  
 You can get it [HERE](https://github.com/seilent/nightcord/tree/main/sekai/release).  
 
 ## **Previews**
