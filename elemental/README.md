@@ -6,12 +6,7 @@ But I prepared the ready to use theme too [HERE](https://github.com/seilent/nigh
 
 Light mode still WIP, for now you can bump the **--accent-light** into 60% ~ 70% then set into light theme in discord settings.
 
-Add this to Custom CSS if you want to remove role color : 
-```
-.username-1A8OIy {
-    color: var(--text-normal) !important;
-}
-```
+For Addon you can find it [HERE](https://github.com/seilent/nightcord-module), just put it at theme folder too and activate as usual.
 
 ## **Previews**
 Screenshot taken with BetterDiscord minimal mode in the settings turned on. 
