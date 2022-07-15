@@ -330,8 +330,8 @@
     background-color: var(--nightcord-dark) !important;
   }
   
-  .modeMuted-onO3r- .icon-1DeIlz,
-  .modeMuted-onO3r- .name-23GUGE,
+  [class*="modeMuted-"] [class*="icon-"],
+  [class*="modeMuted-"] [class*="name-"],
   .wrapper-3WhCwL {
     color: var(--channels-default);
   }
@@ -345,7 +345,7 @@
 
   
   .metadata-3WGS0M,
-  .modeSelected-346R90 .icon-1DeIlz, .modeSelected-346R90:hover .icon-1DeIlz, .modeUnread-1qO3K1 .icon-1DeIlz, .modeUnread-1qO3K1:hover .icon-1DeIlz,
+  [class*="modeSelected-"] [class*="icon-"], [class*="modeSelected-"]:hover [class*="icon-"], [class*="modeUnread-"] [class*="icon-"], [class*="modeUnread-"]:hover [class*="icon-"],
   .anchor-3Z-8Bb,
   .container-2ax-kl,
   .label-22pbtT,
