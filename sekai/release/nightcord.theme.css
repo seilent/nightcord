@@ -12,7 +12,8 @@
 /*Base css*/
 @import url('https://seilent.github.io/nightcord/sekai/base/base.css');
 
-/*Minimal Member List*/
+/*Server Hide (Bugged)*/
+/*@import url(https://seilent.github.io/discord-serverlist-drawer/drawer.theme.css);*/
 
 :root {
       --font-primary: "Nunito";
