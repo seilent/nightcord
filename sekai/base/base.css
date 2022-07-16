@@ -168,7 +168,7 @@
     background-color: var(--brand-experiment);
   }
   
-  .desaturateUserColors-1gar-1 {
+  [class*=desaturateUserColors-] {
     filter: saturate(180%) contrast(40%) brightness(140%) !important;
   }
   
