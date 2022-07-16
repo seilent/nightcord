@@ -502,7 +502,7 @@
 
 /* Some animation */
 
-.mentionsBadge-3tC7Mi .numberBadge-2s8kKX {
+[class*=mentionsBadge-] [class*=numberBadge-] {
   border-radius: 0px;
   animation-name: swing;
   animation-duration: 1s;
