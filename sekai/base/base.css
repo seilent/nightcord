@@ -527,26 +527,67 @@
   }
 }
 
-.bd-minimal .avatar-3uk_u9 .wrapper-3t9DeA foreignObject {
-  mask: none;
-}
-
-.bd-minimal .avatar-3uk_u9 [aria-label] {
-  border-radius: 0%;
-  overflow: hidden;
-}
-
-.bd-minimal .avatar-3uk_u9 .wrapper-3t9DeA rect {
-  mask: none;
-  x: 23px;
-  y: 23px;
-  width: 10px;
-  height: 10px;
-  stroke-width: 2px;
-  stroke: var(--background-secondary);
-}
-
-.bd-minimal .avatar-3uk_u9 .cursorDefault-dsQJ1n rect {
-    x: 8px;
-    y: 6px;
-}
+  /* Toolbar */
+  [class*="title-"] > [class*="children-"] > [class*="iconWrapper-"] > [class*="icon-"],
+  [aria-label="Help"] {
+      display:none;
+  } 
+  
+  [class*="chat-"] > [class*="title-"]:not(:hover) [class*="toolbar-"] > [class*="iconWrapper-"]
+  {
+    display: none;
+  }
+  
+  [class*="chat-"] > [class*="title-"]:not(:hover) [class*="toolbar-"] > [class*="iconWrapper-"][aria-label="Inbox"]{
+    display: flex;
+  }
+  
+  
+  /* Chatbox Nudge 
+  
+  [class*="form-"] [class*="channelTextArea-"] {
+      left: -16px;
+  }
+  
+  [class*="form-"] [class*="channelTextArea-"] .inner-NQg18Y {
+      margin-left: 56px;
+  }*/
+  
+  [class*="homeIcon-"] path{
+      d: path('M13,10.69v2.72H10.23V10.69Zm3,0v2.69h2.69V10.72ZM23.29,12A11.31,11.31,0,1,1,12,.67,11.31,11.31,0,0,1,23.29,12Zm-.18.07a8.87,8.87,0,1,0-8.87,8.86A8.87,8.87,0,0,0,23.11,12.05Z') !important;
+    }
+    
+  [class*="homeIcon-"]{
+    margin-left: 4px !important;
+      margin-top: -4px !important;
+      overflow: visible;
+    }
+    
+  /*Searchbox*/
+  [class*="searchOption-"]::after,
+  [class*="option-"]::after,
+  [class*="queryShortcut-"]{
+    display:none;
+  }
+  
+  [class*="queryContainer-"]{
+    background:var(--background-secondary) !important;
+  }
+  
+  /* Reply Tree */
+  [class*="repliedMessage-"]::before{
+    border-color: var(--nightcord-accent);
+  }
+  
+  /* Search Bar*/
+  [class*="search-"] > [class*="search-"] > [class*="searchBar-"]{
+    width:80px;
+  }
+  
+  [class*="search-"] > [class*="search-"][class*="focused-"] > [class*="searchBar-"]{
+    width:240px;
+  }
+  
+  [class*="circleIcon-"] path{
+      fill: var(--nightcord-accent) !important;
+  }
