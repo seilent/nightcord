@@ -120,13 +120,13 @@
   [class^="css-"][class$="-control"],
   .theme-light .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC,
   [class*="isUnread-"] {
-    border-color: var(--nightcord-dark);
+    border-color: var(--nightcord-accent);
   }
 
   /* END LIGHT THEME */
 
   [class*="scrollerInner-"] [class*="divider-"] {
-    --divider-color: hsl(var(--accent-hue), calc(var(--accent-saturation) / 4.28), calc(var(--accent-light) / 2));
+    --divider-color: hsl(var(--accent-hue), calc(var(--accent-saturation) / 2), calc(var(--accent-light) * 1.6));
   }
 
   [class*="title-"] [class*="children-"] [class*="iconWrapper-"] svg[viewBox="0 0 24 24"] path {
