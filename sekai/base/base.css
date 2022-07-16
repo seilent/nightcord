@@ -595,3 +595,8 @@
   [class*="circleIcon-"] path{
       fill: var(--nightcord-accent) !important;
   }
+
+  [class*="sidebar-"] [class*="container-"] > [class*="header-"] {
+    box-shadow: none;
+  }
+  
