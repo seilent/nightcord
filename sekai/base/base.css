@@ -219,7 +219,8 @@
     d: path('M17,12a4.78,4.78,0,1,1-4.78-4.77A4.78,4.78,0,0,1,17,12Z') !important;
   }
     
-  #channels path[d*="M11.383"] {
+  #channels path[d*="M11.383"],
+  [aria-label="Stage"] {
     opacity: 0;
   }
   
