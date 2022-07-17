@@ -595,7 +595,8 @@
   }
   
   [class*="search-"] > [class*="search-"][class*="focused-"] > [class*="searchBar-"]{
-    width:240px;
+    width:240px,
+  [class*="search-"] > [class*="search-"]:hover > [class*="searchBar-"];
   }
   
   [class*="circleIcon-"] path{
